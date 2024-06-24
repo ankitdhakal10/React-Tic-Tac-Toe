@@ -1,0 +1,59 @@
+
+.app-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.board {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.scores {
+  width: 90%;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  border: 2x solid rgb(165, 23, 23);
+}
+
+.player-x, .player-o {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  vertical-align: top;
+  font-weight: 500;
+  font-size: large;
+}
+
+span {
+  font-size: 28px;
+  font-weight: bold;
+}
+.square  {
+  font-size: 28px;
+  font-weight: bold;
+  color: rgb(37, 207, 37);
+  border: 2px solid white;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.32s ease-in-out, color 0.32s ease-in-out, border 0.32s ease-in-out, ;
+}
+
+.square:hover {
+  background-color: #ffffff;
+  color: black;
+  border: none;
+}
+
+.reset-button {
+  align-self: center;
+  margin-top: 1rem;
+}
